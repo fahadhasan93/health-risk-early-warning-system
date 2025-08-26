@@ -47,7 +47,7 @@ HREWS/
 ```
 
 ## 📊 Dataset Information
-
+**Dataset Source**: [Kaggle – Health Risk Prediction (Anonymized Real Data)](https://www.kaggle.com/datasets/ludocielbeckett/health-risk-prediction-anonymized-real-data)  
 The system uses a comprehensive dataset with **1,000 patients** and **10 features**:
 
 | Feature | Description | Type |
