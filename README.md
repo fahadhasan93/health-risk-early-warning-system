@@ -106,14 +106,10 @@ The application will open in your browser at `http://localhost:8501`
 Additional screenshots ( Dashboard, Risk Prediction, Model Performance):
 
 ```markdown
-![Dashboard](<img width="1913" height="836" alt="Screenshot From 2025-08-26 14-33-38" src="https://github.com/user-attachments/assets/9625e60b-84f2-42b6-9f6d-53c8a90a3e19" />
-)
-![Risk Prediction](<img width="1746" height="845" alt="Screenshot From 2025-08-26 14-36-20" src="https://github.com/user-attachments/assets/00a7d226-3b94-41f2-ac45-253fbd3f152a" />
-)
-![Model Performance](<img width="1669" height="812" alt="Screenshot From 2025-08-26 14-41-55" src="https://github.com/user-attachments/assets/9da46d97-c999-4acc-8172-6a8215b9bdbb" />
-)
-![Model Performance](<img width="1681" height="813" alt="Screenshot From 2025-08-26 14-43-20" src="https://github.com/user-attachments/assets/68cc0f41-a608-47fa-b68f-01dc618a1673" />
-)
+![Dashboard](https://github.com/user-attachments/assets/9625e60b-84f2-42b6-9f6d-53c8a90a3e19)
+![Risk Prediction](https://github.com/user-attachments/assets/00a7d226-3b94-41f2-ac45-253fbd3f152a)
+![Model Performance](https://github.com/user-attachments/assets/9da46d97-c999-4acc-8172-6a8215b9bdbb)
+![Model Performance](https://github.com/user-attachments/assets/68cc0f41-a608-47fa-b68f-01dc618a1673)
 ```
 
 ## 📱 Application Features
