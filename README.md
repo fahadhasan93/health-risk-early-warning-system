@@ -105,12 +105,17 @@ The application will open in your browser at `http://localhost:8501`
 
 Additional screenshots ( Dashboard, Risk Prediction, Model Performance):
 
-```markdown
+### Dashboard
 ![Dashboard](https://github.com/user-attachments/assets/9625e60b-84f2-42b6-9f6d-53c8a90a3e19)
+
+### Risk Prediction
 ![Risk Prediction](https://github.com/user-attachments/assets/00a7d226-3b94-41f2-ac45-253fbd3f152a)
-![Model Performance](https://github.com/user-attachments/assets/9da46d97-c999-4acc-8172-6a8215b9bdbb)
-![Model Performance](https://github.com/user-attachments/assets/68cc0f41-a608-47fa-b68f-01dc618a1673)
-```
+
+### Model Performance
+![Model Performance 1](https://github.com/user-attachments/assets/9da46d97-c999-4acc-8172-6a8215b9bdbb)
+
+![Model Performance 2](https://github.com/user-attachments/assets/68cc0f41-a608-47fa-b68f-01dc618a1673)
+
 
 ## 📱 Application Features
 
