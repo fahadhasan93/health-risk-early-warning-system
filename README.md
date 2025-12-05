@@ -9,7 +9,6 @@ The Health Risk Early Warning System (HREWS) is designed to assist healthcare pr
 - **Predicting patient risk levels** (Normal, Low, Medium, High) using vital signs and clinical data
 - **Providing real-time risk assessments** through an intuitive web interface
 - **Identifying critical clinical features** that influence risk prediction
-- **Offering model interpretability** (feature importance and prediction explanations) for medical professionals
  
 
 ## 🎯 Key Features
@@ -32,7 +31,6 @@ The Health Risk Early Warning System (HREWS) is designed to assist healthcare pr
 - Multiple ML algorithms (Logistic Regression, Random Forest, SVM, XGBoost)
 - Automatic model selection based on performance
 - Feature importance analysis
-- Model interpretability (feature importance and prediction explanations)
 
 ## 🏗️ System Architecture
 
@@ -162,10 +160,7 @@ Additional screenshots ( Dashboard, Risk Prediction, Model Performance):
    - Performance evaluation (Accuracy, Precision, Recall, F1-score)
    - Automatic best model selection
    - Cross-validation
-
-4. **Model Interpretability**
    - Feature importance ranking
-   - Prediction explanations
 
 ### Performance Metrics
 
