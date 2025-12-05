@@ -1,0 +1,33 @@
+# Byte-compiled / cached files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+hrews_env/
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+*.swp
+*.swo
+
+# Python packaging
+*.egg-info/
+
+# Data / artifacts
+patient_history.json
+*.ipynb_checkpoints/
+
+# Streamlit
+.streamlit/
+
+# Logs
+*.log
+
+# Model artifacts (keep hrews_model.pkl if you want tracked)
+# *.pkl
+
+# Misc
+.~lock.*
