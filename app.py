@@ -620,41 +620,22 @@ class HREWSApp:
         
         with col2:
             # Dynamically determine the best model name and metrics
-            if self.predictor and hasattr(self.predictor, 'best_model') and self.predictor.best_model is not None:
-                # Map common model classes to friendly names
-                bm = self.predictor.best_model
-                if isinstance(bm, LogisticRegression):
-                    model_name = 'Logistic Regression'
-                elif isinstance(bm, RandomForestClassifier):
-                    model_name = 'Random Forest'
-                elif isinstance(bm, SVC):
-                    model_name = 'SVM'
-                elif isinstance(bm, xgb.XGBClassifier):
-                    model_name = 'XGBoost'
-                else:
-                    model_name = type(bm).__name__
+            metrics_path = 'model_metrics.json'
+            if os.path.exists(metrics_path):
+                import json
+                with open(metrics_path, 'r') as fh:
+                    mobj = json.load(fh)
 
-                # Compute evaluation metrics from the predictor's test split
-                try:
-                    # predictor.evaluate_best_model prints a report and returns predictions
-                    y_pred, y_pred_proba = self.predictor.evaluate_best_model()
-                    y_true = self.predictor.y_test
-                    accuracy = accuracy_score(y_true, y_pred)
-                    precision, recall, f1, _ = precision_recall_fscore_support(y_true, y_pred, average='weighted')
-                except Exception:
-                    # Fallback if evaluation cannot be run here
-                    model_name = model_name
-                    accuracy = None
-                    precision = None
-                    recall = None
-                    f1 = None
+                best_model_name = mobj.get('best_model', 'Unknown')
+                st.success(f"**Best Model:** {best_model_name}")
 
-                st.success(f"**Best Model:** {model_name}")
-                if accuracy is not None:
-                    st.success(f"**Accuracy:** {accuracy*100:.1f}%")
-                    st.success(f"**F1 Score:** {f1*100:.1f}%")
-                    st.success(f"**Precision:** {precision*100:.1f}%")
-                    st.success(f"**Recall:** {recall*100:.1f}%")
+                # Display metrics for the best model
+                if best_model_name in mobj['models']:
+                    best_model_metrics = mobj['models'][best_model_name]
+                    st.success(f"**Accuracy:** {best_model_metrics['accuracy']*100:.1f}%")
+                    st.success(f"**F1 Score:** {best_model_metrics['f1']*100:.1f}%")
+                    st.success(f"**Precision:** {best_model_metrics['precision']*100:.1f}%")
+                    st.success(f"**Recall:** {best_model_metrics['recall']*100:.1f}%")
                 else:
                     st.info("Model metrics are not available in this view.")
             else:
